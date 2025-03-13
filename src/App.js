@@ -48,11 +48,12 @@ function App() {
       {response && <div style={styles.response}><strong>Response:</strong> {response}</div>}
       {error && <div style={styles.error}>{error}</div>}
 
-      <div className="footer">
-        <p>Built and Deployed by <a href="akindukodithuwakku.com"> Akindu Kodithuwakku</a></p>
-        <h3> This site is designed and developed for test purposes. Site won't generate any response as of now 
-        due to the discontinuity of lambda function</h3>
-        </div>
+      <div className="footer" style={styles.footer}>
+        <p>Built and Deployed by <a href="https://akindukodithuwakku.com" target="_blank" rel="noopener noreferrer">Akindu Kodithuwakku</a></p>
+        <p>Follow me on <a href="https://github.com/akindukodithuwakku" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p>&copy; {new Date().getFullYear()} Akindu Kodithuwakku. All rights reserved. </p>
+        <h3>This site is designed and developed for test purposes. Site won't generate any response as of now due to the discontinuity of lambda function</h3>
+      </div>
     </div>
   );
 }
@@ -96,6 +97,13 @@ const styles = {
   error: {
     color: "red",
     marginTop: "10px",
+  },
+  footer: {
+    marginTop: "40px",
+    padding: "20px",
+    backgroundColor: "#f8f9fa",
+    borderTop: "1px solid #e9ecef",
+    textAlign: "center",
   },
 };
 
